@@ -14,3 +14,5 @@
     - SMT solvers: Z3, Alt-Ergo, CVC4, etc.
     - Why3
     - Coq: The properties we want to prove can be too complex to be solved automatically by SMT solvers, typically when they requires careful inductive reasoning with precise choices at each step. In this situation, WP allows us to generate verification conditions translated in Coq language, and to write the proof ourselves. 
+
+
