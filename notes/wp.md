@@ -10,3 +10,7 @@
 ## Weakest precondition calculus:
 - Hoare triple (as stated above) reason about programs in a style called ```forward reasoning```. We calculate from the precondition and from one or multiple instructions, the strongest postcondition we can reach. 
 - ```Backward reasoning```: From the wanted postcondition and the instructions we are reasoning about, we find the weakest precondition that ensures this behavior.
+- Supports various tools:
+    - SMT solvers: Z3, Alt-Ergo, CVC4, etc.
+    - Why3
+    - Coq: The properties we want to prove can be too complex to be solved automatically by SMT solvers, typically when they requires careful inductive reasoning with precise choices at each step. In this situation, WP allows us to generate verification conditions translated in Coq language, and to write the proof ourselves. 
