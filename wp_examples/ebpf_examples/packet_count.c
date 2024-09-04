@@ -11,3 +11,5 @@ int packet_count(void *ctx) {
 }
 
 char LICENSE[] SEC("license") = "Dual BSD/GPL";
+
+//  frama-c -cpp-extra-args="-I my_linux -I $(frama-c -print-path)/linux" -wp -rte packet_count.c
